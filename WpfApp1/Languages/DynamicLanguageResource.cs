@@ -37,7 +37,6 @@ namespace WpfApp1.Languages
         {
             _cultureInfo = new CultureInfo(languageCode);
             Thread.CurrentThread.CurrentCulture = _cultureInfo;
-            Thread.CurrentThread.CurrentUICulture = _cultureInfo;
 
             foreach (Window window in Application.Current.Windows.Cast<Window>())
             {

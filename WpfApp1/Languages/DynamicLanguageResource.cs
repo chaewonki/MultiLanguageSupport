@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
+﻿using System.Dynamic;
 using System.Globalization;
 using System.Linq;
 using System.Resources;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Markup;
 using System.Windows;
 using WpfApp1.Languages.Strings;

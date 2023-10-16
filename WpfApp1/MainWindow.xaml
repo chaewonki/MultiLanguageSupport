@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:properties="clr-namespace:WpfApp1.Languages.Strings"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="150" Width="300">
+    <StackPanel>
+        <Label Content="{Binding Source={StaticResource DynamicLanguageResource}, Path=[wrd_Test]}"/>
+        <Button Margin="5" Width="100"
+                Content="{Binding Source={StaticResource DynamicLanguageResource}, Path=[wrd_Korean]}"
+                Command="{Binding LanguageChangeCommand}"
+                CommandParameter="korean"/>
+        <Button Margin="5" Width="100"
+                Content="{Binding Source={StaticResource DynamicLanguageResource}, Path=[wrd_English]}"
+                Command="{Binding LanguageChangeCommand}"
+                CommandParameter="english"/>
+    </StackPanel>
+</Window>
